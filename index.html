@@ -83,14 +83,47 @@
       <section class="search">
       <b class="dialog-header">заинтересовались?</b>
       <p class="dialog-content">укажите предполагаемые даты поездки, а мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <!--Здесь будет форма-->
+        <section class="search-form-container">
+          <a class="search-btn" href="https://echo.htmlacademy.ru">поиск гостиницы в Седоне</a>
+          <form class="search-form" action="hotel-form.html" method="post">
+            <p class="appointment-item">
+              <label for="appointment-arrival">Дата заезда:</label>
+              <input id="appointment-arrival" type="date" name="arrival" placeholder="24 апреля 2017">
+              <span  class="icon-calendar"></span>
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-departure">Дата выезда:</label>
+              <input id="appointment-departure" type="date" name="time" placeholder="4 июля 2017">
+              <span  class="icon-calendar"></span>
+            </p>
+            <p class="appointment-item appointment-item-column">
+                <label for="appointment-adults">Взрослые:</label>
+                <div class="appointment-counter">
+                    <button class="search-form-btn  search-form-minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                    <input class="search-form search-form-text" type="text" value="2" id="adults" name="adults">
+                    <button class="search-form-btn  search-form-plus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                </div>
+            </p>
+            <p class="appointment-item appointment-item-column">
+                <label for="appointment-kids">Дети:</label>
+                <div class="appointment-counter">
+                    <button class="search-form-btn  search-form-minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+                    <input class="search-form search-form-text" type="text" value="0" id="kids" name="kids">
+                    <button class="search-form-btn  search-form-plus" type="button"><span class="visually-hidden">Увеличить</span></button>
+                </div>
+            </p>
+            <button type="submit" class="appointment-btn">Найти</button>
+            </form>
+        </section>
       </section>
       <div class="map">
+          <h2 class="visually-hidden">Седона на карте</h2>
+          <!--здесь будет карта-->
       </div>
         </main>
    <footer class="main-footer">
      <p class="footer-instagram">
-        <a class="social-button" href="#">#visidsedona</a>
+        <a class="social-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
        </p>
      <div class="footer-social">
      <ul>

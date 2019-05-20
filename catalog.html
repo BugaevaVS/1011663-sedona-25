@@ -19,8 +19,57 @@
         </nav>
     </header>
      <main class="container">
-        <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
-        <!--<section>Здесь будут инфраструктура и тип жилья</section>-->
+        <h1 class="visually-hidden">Гостиницы Седоны</h1>
+        <section class="filters">
+           <h2 class="visually-hidden">Фильтр поиска жилья в Седоне</h2>
+           <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
+
+            <div class="filters-infrastructure">
+            <fieldset class="filters-fieldset">
+                <legend>Инфраструктура:</legend>
+                <ul class="filters-list">
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                    <label for="pool">Бассейн</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavecito" id="filter-wifi">
+                    <label for="filter-wifi">Wi-fi</label>
+                  </li>
+                   </ul>
+              </fieldset>
+              </div>
+
+              <div class="filters-different">
+              <fieldset>
+                  <legend>Тип жилья:</legend>
+                  <ul class="filters-list column-option">
+                    <li class="filter-option ">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                      <label for="hotel">Гостиница</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                      <label for="motel">Мотель</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                      <label for="apartments">Апартаменты</label>
+                    </li>
+                     </ul>
+                </fieldset>
+              </div>
+              <div class="range-search">
+                <!--здесь будет диапазон стоимости жилья-->
+                    <button type="submit" class="filter-button button">Показать</button>
+                      </div>
+           </form>
+        </section>
+
                <section class="catalog">           
             <h2 class="visually-hidden">Список гостиниц Седоны</h2>
 
@@ -141,13 +190,13 @@
           </main>
           <footer class="main-footer">
                 <p class="footer-instagram">
-                   <a class="social-button" href="#">#visidsedona</a>
+                   <a class="social-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
                   </p>
                 <div class="footer-social">
                 <ul>
-                <li><a class="social-button-twitter" href="#">twitter</a></li>
-                <li><a class="social-button-facebook" href="#">facebook</a></li>
-                <li><a class="social-button-youtube" href="#">youtube</a></li>
+                  <li><a class="social-button social-button-tw" href="#">twitter</a></li>
+                  <li><a class="social-button social-button-fb" href="#">facebook</a></li>
+                  <li><a class="social-button social-button-yt" href="#">youtube</a></li>
                 </ul>
               </div>
               <p class="footer-copyright">
