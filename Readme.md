@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вика](https://up.htmlacademy.ru/htmlcss/25/user/1011663).
-* Наставник: [Наталья Налимова](https://up.htmlacademy.ru/htmlcss/25/user/16507).
+* Наставник: [Владислав Токарев](https://up.htmlacademy.ru/htmlcss/25/user/230106).
 
 ---
 
