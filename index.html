@@ -20,7 +20,7 @@
     </header>
    <main class="container">
       <h1 class="visually-hidden">Sedona</h1>
-     <p class="headline"><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
+     <b class="headline">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
      <p class="advantages">Рассмотрим 5 причин,по которым Седона круче, чем Гранд каньон!</p>
      <h2 class="visually-hidden">Преимущества Седоны</h2>
      <section class="features">
@@ -87,30 +87,29 @@
           <a class="search-btn" href="https://echo.htmlacademy.ru">поиск гостиницы в Седоне</a>
           <form class="search-form" action="hotel-form.html" method="post">
             <p class="appointment-item">
-              <label for="appointment-arrival">Дата заезда:</label>
-              <input id="appointment-arrival" type="date" name="arrival" placeholder="24 апреля 2017">
+              <label for="arrival">Дата заезда:</label>
+              <input id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
               <span  class="icon-calendar"></span>
             </p>
             <p class="appointment-item">
-              <label for="appointment-departure">Дата выезда:</label>
-              <input id="appointment-departure" type="date" name="time" placeholder="4 июля 2017">
+              <label for="departure">Дата выезда:</label>
+              <input id="departure" type="text" name="time" placeholder="4 июля 2017">
               <span  class="icon-calendar"></span>
             </p>
             <p class="appointment-item appointment-item-column">
-                <label for="appointment-adults">Взрослые:</label>
-                <div class="appointment-counter">
+                <label for="adults">Взрослые:</label>                
                     <button class="search-form-btn  search-form-minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
                     <input class="search-form search-form-text" type="text" value="2" id="adults" name="adults">
                     <button class="search-form-btn  search-form-plus" type="button"><span class="visually-hidden">Увеличить</span></button>
-                </div>
+               
             </p>
             <p class="appointment-item appointment-item-column">
-                <label for="appointment-kids">Дети:</label>
-                <div class="appointment-counter">
+                <label for="kids">Дети:</label>
+                
                     <button class="search-form-btn  search-form-minus" type="button"><span class="visually-hidden">Уменьшить</span></button>
                     <input class="search-form search-form-text" type="text" value="0" id="kids" name="kids">
                     <button class="search-form-btn  search-form-plus" type="button"><span class="visually-hidden">Увеличить</span></button>
-                </div>
+               
             </p>
             <button type="submit" class="appointment-btn">Найти</button>
             </form>
