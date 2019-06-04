@@ -22,8 +22,9 @@
         </nav>
     </header>
      <main class="container">
-        <h1 class="visually-hidden">Гостиницы Седоны</h1>
-        <section class="filters">
+          <section class="filters">
+            <div class="filters-container">
+              <h1 class="visually-hidden">Гостиницы Седоны</h1>
            <h2 class="visually-hidden">Фильтр поиска жилья в Седоне</h2>
            <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
 
@@ -71,9 +72,22 @@
                     <button type="submit" class="filter-button button">Показать</button>
                       </div>
            </form>
+           </div>
         </section>
 
-               <section class="catalog">           
+        <section class="sorting">
+          <div class="sorting-container">
+           <span>Найдено: 3</span>
+           <span>сортировка</span>
+           <span>по цене</span>
+           <span>по типу</span>
+           <span>по рейтингу</span>
+          </div>
+        
+        </section>
+
+          <section class="catalog">  
+            <div class="catalog-container">         
             <h2 class="visually-hidden">Список гостиниц Седоны</h2>
 
             <ul class="hotel-catalog">
@@ -187,28 +201,30 @@
               </div>
               </li>
             </ul>
+            </div>
             
            </section>
             
           </main>
           <footer class="main-footer">
-                <p class="footer-instagram">
-                   <a class="instagram-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
-                  </p>
-                <div class="footer-social">
-                <ul>
-                  <li><a class="social-button social-button-tw" href="#">twitter</a></li>
-                  <li><a class="social-button social-button-fb" href="#">facebook</a></li>
-                  <li><a class="social-button social-button-yt" href="#">youtube</a></li>
-                </ul>
-              </div>
-              <p class="footer-copyright">
-                  <b class="copyright_link">Website by</b> 
-                  <a class="footer_logo" href="https://htmlacademy.ru">
-                    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
-                  </a>
+                <div class="container">
+              <p class="footer-instagram">
+                 <a class="instagram-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
                 </p>
-           
+              <div class="footer-social">
+              <ul>
+              <li><a class="social-button social-button-tw" href="#">twitter</a></li>
+              <li><a class="social-button social-button-fb" href="#">facebook</a></li>
+              <li><a class="social-button social-button-yt" href="#">youtube</a></li>
+              </ul>
+             </div>
+             <p class="footer-copyright">
+                 <b class="copyright_link">Website by</b> 
+                  <a class="footer_logo" href="https://htmlacademy.ru">
+                   <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
+                 </a>
+               </p>
+                </div>
               </footer>
            
                
