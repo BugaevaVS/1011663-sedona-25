@@ -9,11 +9,11 @@
   </head>
   <body>
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation flex-container">
             <a class="main-header-logo" href="index.html">
               <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип City of Sedona">
             </a>
-            <ul class="site-navigation">
+            <ul class="site-navigation flex-wrapper">
                 <li><a href="info.html">информация</a></li>
                 <li><a href="photo.html">фото и видео</a></li>
                 <li><a href="map.html">карта штата</a></li>
@@ -22,11 +22,13 @@
         </nav>
     </header>
      <main class="container">
-          <section class="filters">
-            <div class="filters-container">
+          <section class="filters flex-container">
+            <div class="filters-container flex-wrapper">
+
               <h1 class="visually-hidden">Гостиницы Седоны</h1>
            <h2 class="visually-hidden">Фильтр поиска жилья в Седоне</h2>
            <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
+            
 
             <div class="filters-infrastructure">
             <fieldset class="filters-fieldset">
@@ -67,16 +69,16 @@
                      </ul>
                 </fieldset>
               </div>
+            
               <div class="range-search">
                 <!--здесь будет диапазон стоимости жилья-->
                     <button type="submit" class="filter-button button">Показать</button>
                       </div>
            </form>
-           </div>
+          </div>
         </section>
-
-        <section class="sorting">
-          <div class="sorting-container">
+        <section class="sorting flex-container">
+          <div class="sorting-container flex-wrapper">
            <span>Найдено: 3</span>
            <span>сортировка</span>
            <span>по цене</span>
@@ -86,7 +88,8 @@
         
         </section>
 
-          <section class="catalog">  
+          <section class="catalog flex-container">  
+            <div class="flex-wrapper"
             <div class="catalog-container">         
             <h2 class="visually-hidden">Список гостиниц Седоны</h2>
 
@@ -202,15 +205,18 @@
               </li>
             </ul>
             </div>
+          </div>
             
            </section>
             
           </main>
-          <footer class="main-footer">
-                <div class="container">
-              <p class="footer-instagram">
-                 <a class="instagram-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
-                </p>
+          <footer class="main-footer flex-container">
+              <div class="flex-wrapper footer-wrap">
+                
+                 <p class="footer-instagram">
+                  <a class="instagram-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
+                 </p>
+               
               <div class="footer-social">
               <ul>
               <li><a class="social-button social-button-tw" href="#">twitter</a></li>
@@ -219,14 +225,15 @@
               </ul>
              </div>
              <p class="footer-copyright">
-                 <b class="copyright_link">Website by</b> 
+                   <b class="copyright_link">Website by</b> 
                   <a class="footer_logo" href="https://htmlacademy.ru">
                    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
-                 </a>
-               </p>
-                </div>
-              </footer>
-           
+                  </p>
+               </div>
+             </div>
+                
+         
+            </footer>
                
            
              </body>

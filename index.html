@@ -6,14 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/3112F2F4-F642-AD4A-9F71-BD8C0C802FEF/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/3CB9319B-DD5E-B147-9B83-334816E61CB6/abn/main.css"/><script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/3112F2F4-F642-AD4A-9F71-BD8C0C802FEF/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/3CB9319B-DD5E-B147-9B83-334816E61CB6/abn/main.css"/></head>
+  </head>
   <body>
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation flex-container">
             <a class="main-header-logo">
             <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип City of Sedona">
             </a>
-                <ul class="site-navigation">
+                <ul class="site-navigation flex-wrapper">
                 <li><a href="info.html">информация</a></li>
                 <li><a href="photo.html">фото и видео</a></li>
                 <li><a href="map.html">карта штата</a></li>
@@ -24,8 +24,8 @@
     </header>
 
    <main class="container">
-     <section class="showcase">
-     <div class="showcase-container">
+     <section class="showcase flex-container">
+     <div class="showcase-container flex-wrapper">
      <div class="welcome">
       <h1 class="visually-hidden">Седона: город в Аризоне</h1>
       <img class="welcome-image" src="img/intro-welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">
@@ -37,11 +37,12 @@
     </div>
     </section>
 
-       <section class="features">
+       <section class="features flex-container">
+         <div class="flex-wrapper">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ol class="features-list">
-                <li class="feature-item">
-                    <div class="feature-picture picture-town"></div>
+                <li class="feature-item feature-picture">
+                    <div class="picture-town"></div>
                     <div class="feature-about">                        
                         <h3 class="feature-header">Настоящий городок</h3>
                           <span class="feature-number">- №1 -</span>
@@ -49,21 +50,27 @@
                     </div>
                             <ul class="suggestion-list">
                                 <li class="suggestion-item">
+                                  <div class="suggestion-container">
                                   <h4 class="suggestion-header">Жилье</h4>
                                   <p class="suggestion-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                                  </div>
                                 </li>
                                 <li class="suggestion-item">
+                                    <div class="suggestion-container">
                                     <h4 class="suggestion-header">Еда</h4>
                                     <p class="suggestion-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                                    </div>
                                   </li>
                                   <li class="suggestion-item">
+                                      <div class="suggestion-container">
                                       <h4 class="suggestion-header">Сувениры</h4>
                                       <p class="suggestion-text">Не только китайского, но и местного производства!</p>
+                                      </div>
                                     </li>
                              </ul> 
                 </li>    
                     <li class="feature-item">
-                        <div class="feature-picture picture-bridge"></div>
+                        <div class="picture-bridge"></div>
                         <div class="feature-about">                        
                             <h3 class="feature-header">Там есть мост дьявола</h3>
                               <span class="feature-number">- №2 -</span>
@@ -90,21 +97,28 @@
                                    <span class="feature-number">- №5 -</span>
                                    <p class="feature-text">Большинство едет в Гранд каньон и толпится там</p>
                             </div>
-                        </li>       
-                
+                        </li>    
+                        
+                     
              
         </ol>
+      </div>
     </section>
-      <section class="search">
+      <section class="search flex-container">
+        <div class="flex-wrapper">
           <div class="search-container">
       <b class="dialog-header">заинтересовались?</b>
-      <p class="dialog-content">укажите предполагаемые даты поездки, а мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="dialog-content">укажите предполагаемые даты поездки, <br> а мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
-            <div class="search-form-container">
+        </div>
+            <div class="search-form-container flex-wrapper">
           <a class="search-btn" href="https://echo.htmlacademy.ru">поиск гостиницы в Седоне</a>
+            </div>
+            <div class="flex-wrapper">
+            <div class="search-form-hotel">
           <form class="search-form" action="hotel-form.html" method="post">
             <p class="appointment-item">
-              <label for="arrival">Дата заезда:</label>
+              <label for="arrival">Дата заезда:</label> 
               <input id="arrival" type="text" name="arrival" placeholder="24 апреля 2017">
               <span  class="icon-calendar"></span>
             </p>
@@ -130,17 +144,25 @@
             </p>
             <button type="submit" class="appointment-btn">Найти</button>
             </form>
+            </div>
+        </div>
         </div>
       </section>
-      <div class="map">
+
+      <section class="map flex-container">
+        <div class="map-container flex-wrapper">
           <h2 class="visually-hidden">Седона на карте</h2>
-      </div>
+        </div>
+      </section>
         </main>
-   <footer class="main-footer">
-       <div class="container">
-     <p class="footer-instagram">
-        <a class="instagram-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
-       </p>
+
+   <footer class="main-footer flex-container">
+     <div class="flex-wrapper footer-wrap">
+       
+        <p class="footer-instagram">
+         <a class="instagram-button" href="#" aria-label="Седона в инстаграм">#visidsedona</a>
+        </p>
+      
      <div class="footer-social">
      <ul>
      <li><a class="social-button social-button-tw" href="#">twitter</a></li>
@@ -149,12 +171,13 @@
      </ul>
     </div>
     <p class="footer-copyright">
-        <b class="copyright_link">Website by</b> 
+          <b class="copyright_link">Website by</b> 
          <a class="footer_logo" href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
-        </a>
-      </p>
-       </div>
+         </p>
+      </div>
+    </div>
+       
 
    </footer>
 
